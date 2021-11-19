@@ -19,6 +19,32 @@ $(document).ready(function () {
         }
     });
 
+    // 비주얼 슬라이드
+    new Swiper('.sw-visual', {
+        loop: true,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            type: "fraction",
+        },
+        effect: "fade",
+        crossEffect: {
+            crossFade: true
+        },
+        speed: 1000,
+    });
+
+    // customer 슬라이드
+    new Swiper('.sw-cu', {
+        loop: true,
+        slidesPerView: 4,
+        spaceBetween: 5,
+        speed: 1000,
+    });
+
 
     // 베스트 상품 메뉴 
     var best_cate_list = $('.best-cate-list>li');
@@ -35,19 +61,20 @@ $(document).ready(function () {
         });
     });
 
-    // 배너슬라이드
-    new Swiper('.swiper-container', {
-        loop: true,
-        autoplay: {
-            delay: 2500,
-            disableOnInteraction: false,
-        },
-        effect: "fade",
-        crossEffect: {
-            crossFade: true
-        },
-        speed: 1000,
-    });
+
+    // // 배너슬라이드
+    // new Swiper('.swiper-container', {
+    //     loop: true,
+    //     autoplay: {
+    //         delay: 2500,
+    //         disableOnInteraction: false,
+    //     },
+    //     effect: "fade",
+    //     crossEffect: {
+    //         crossFade: true
+    //     },
+    //     speed: 1000,
+    // });
 
     // 펼침 목록 만들기
     $('.f-site-bt').click(function () {
