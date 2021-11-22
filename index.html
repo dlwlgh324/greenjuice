@@ -33,6 +33,16 @@
         </div>
     </div>
     <div class="wrap">
+        <!-- 모달창 -->
+        <div class="modal">
+            <div class="modal-cont">
+                <button class="modal-close">
+                    close
+                </button>
+                <a href="#" class="modal-show">
+                    본 페이지는 크롬에 최적화되어있습니다.</a>
+            </div>
+        </div>
         <!-- 상단 영역-->
         <header class="header">
             <div class="header-top">
@@ -101,39 +111,40 @@
                 <p class="customer-tit">고객님 안녕하세요!</p>
                 <div class="customer-wrap clearfix">
                     <div class="customer-slide left">
-                        <div class="swiper-container sw-cu">
+                        <div class="swiper-container sw-cs">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <a href="#"><span class="customer-img cu-1"></span>
+                                    <a href="#"><span class="customer-img cs-1"></span>
                                         <p>음용내역</p>
                                     </a>
                                 </div>
                                 <div class="swiper-slide">
-                                    <a href="#"><span class="customer-img cu-2"></span>
+                                    <a href="#"><span class="customer-img cs-2"></span>
                                         <p>음용제품변경</p>
                                     </a>
                                 </div>
                                 <div class="swiper-slide">
-                                    <a href="#"><span class="customer-img cu-3"></span>
+                                    <a href="#"><span class="customer-img cs-3"></span>
                                         <p>찜한제품</p>
                                     </a>
                                 </div>
                                 <div class="swiper-slide">
-                                    <a href="#"><span class="customer-img cu-4"></span>
+                                    <a href="#"><span class="customer-img cs-4"></span>
                                         <p>고객번호등록/찾기</p>
                                     </a>
                                 </div>
                                 <div class="swiper-slide">
-                                    <a href="#"><span class="customer-img cu-5"></span>
+                                    <a href="#"><span class="customer-img cs-5"></span>
                                         <p>스마트청구서</p>
                                     </a>
                                 </div>
                                 <div class="swiper-slide">
-                                    <a href="#"><span class="customer-img cu-6"></span>
-                                        <p>음용내역</p>
+                                    <a href="#"><span class="customer-img cs-6"></span>
+                                        <p>배달건너뛰기</p>
                                     </a>
                                 </div>
                             </div>
+                            <div class="swiper-pagination sw-cs-pg"></div>
                         </div>
                     </div>
                     <div class="customer-login right">
@@ -344,7 +355,7 @@
 
         <!-- 배너2 영역 -->
         <!-- <section class="banner-2">
-            <div class="swiper-container">
+            <div class="swiper-container sw-banner">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="banner-slide bg-1">
